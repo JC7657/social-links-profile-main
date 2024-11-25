@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-theme-grey900 text-theme-white;
+  }
+}
+
+@layer components {
+  .card {
+    @apply py-6 px-4 flex flex-col align-middle min-h-fit mx-1 bg-theme-grey800 rounded-xl desktop:h-auto desktop:min-w-80 w-96;
+  }
+  .profile-picture {
+    @apply rounded-full max-w-[35%] object-cover self-center;
+  }
+  .btn-link {
+    @apply block w-full desktop:w-[90%] bg-theme-grey700 my-2 rounded-lg py-3 font-bold hover:bg-theme-green hover:text-theme-grey900 transition;
+  }
+}
